@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Static Template</title>
+    <script>
+      "use strict";
+      (function () {
+        window.onload = () => {
+          const obj = document.querySelector("#gallery");
+          const time = 10000;
+          function animStart() {
+            if (obj.classList.contains("active") == false) {
+              obj.classList.add("active");
+              setTimeout(() => {
+                animEnd();
+              }, time);
+            }
+          }
+          function animEnd() {
+            obj.classList.remove("active");
+            obj.offsetWidth;
+          }
+          document.addEventListener("scroll", function () {
+            // scroll or scrollend
+            animStart();
+          });
+          window.addEventListener("resize", animStart);
+          animStart();
+        };
+      })();
+    </script>
+    <script
+      defer
+      type="text/javascript"
+      src="https://datapulse.app/datapulse.min.js"
+      id="datapulse"
+      data-endpoint="https://datapulse.app/api/v1/event"
+      data-workspace="cljxyawph11oh8j37ilowp61a"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <div id="titles">
+        <h1>The Beautiful Girl In The Gallery</h1>
+        <p class="noml">
+          Still have vegetables, And it's you, So quiet, The colour that still
+          lifes, With its own existence, Tremors. If no light, How can they? A
+          stranger, I like you, So quietly standing, You carry on, The light
+          intensity.
+        </p>
+        <a href="https://cseec.com">Back Home</a>
+      </div>
+      <div id="gallery">
+        <figure>
+          <img
+            src="/img/1.jpg"
+            alt="Pink and blue clouds at sunset. "
+            title="Photo by Jeremy Doddridge for Unsplash"
+          />
+          <figcaption>20230520, Beijing</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="/img/2.jpg"
+            alt="Low angle view up into a sky filled with deep blue clouds. "
+            title="Photo by Matthew Brayer for Unsplash"
+          />
+          <figcaption>2023, Sky Gallery SZ</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="/img/3.jpg"
+            alt="Heavy gray clouds in the sky. "
+            title="Photo by Simeon Muller for Unsplash"
+          />
+          <figcaption>20230520, Beijing</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="/img/4.jpg"
+            alt="Deep orange clouds at sunset. "
+            title="Photo by Laura Vinck for Unsplash"
+          />
+          <figcaption>20230520, Beijing</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="/img/5.jpg"
+            alt="Clouds in shades of dark blue and magenta at sunset. "
+            title="Photo by Szabo Viktor for Unsplash"
+          />
+          <figcaption>20230520, Beijing</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="/img/6.jpg"
+            alt="Clouds in shades of blue and gold at sunrise. "
+            title="Photo by Łukasz Łada for Unsplash"
+          />
+          <figcaption>2023, Xishuangbanna</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="/img/7.jpg"
+            alt="clouds and sky during daytime"
+            title="Photo by Diego PH for Unsplash"
+          />
+          <figcaption>2023, Xishuangbanna</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="/img/8.jpg"
+            alt="white clouds and blue sky. "
+            title="Photo by Carlos Kenobi for Unsplash"
+          />
+          <figcaption>2023, Xishuangbanna</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="/img/9.jpg"
+            alt="cloudy sky. "
+            title="Photo by Alex Machado for Unsplash"
+          />
+          <figcaption>2023, Xishuangbanna</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="/img/10.jpg"
+            alt="rainbow during daytime. "
+            title="Photo by Yulia Gadalina for Unsplash"
+          />
+          <figcaption>2023, Xishuangbanna</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="/img/11.jpg"
+            alt="white sea of clouds. "
+            title="Photo by Szabo Viktor for Unsplash"
+          />
+          <figcaption>2023, Xishuangbanna</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="/img/12.jpg"
+            alt="white sea of clouds. "
+            title="Photo by Szabo Viktor for Unsplash"
+          />
+          <figcaption>2023, Xishuangbanna</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="/img/13.jpg"
+            alt="white sea of clouds. "
+            title="Photo by Szabo Viktor for Unsplash"
+          />
+          <figcaption>2023, 7.7</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="/img/14.jpg"
+            alt="white sea of clouds. "
+            title="Photo by Szabo Viktor for Unsplash"
+          />
+          <figcaption>2023, 7.7</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="/img/15.jpg"
+            alt="white sea of clouds. "
+            title="Photo by Szabo Viktor for Unsplash"
+          />
+          <figcaption>2023, 7.7</figcaption>
+        </figure>
+      </div>
+    </main>
+
+    <footer id="info"></footer>
+  </body>
+</html>
