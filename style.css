@@ -241,4 +241,11 @@ figure > div {
   #gallery {
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   }
+  h1 {
+    font-size: 4.8rem;
+    padding-bottom: 40px;
+  }
+  main {
+    padding: 40px;
+  }
 }
